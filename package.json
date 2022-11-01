@@ -12,14 +12,17 @@
   "dependencies": {
     "@react-navigation/bottom-tabs": "^6.4.0",
     "@react-navigation/native": "^6.0.13",
+    "@react-navigation/stack": "^6.3.2",
     "react": "18.1.0",
     "react-import": "^1.5.3",
     "react-native": "^0.70.3",
     "react-native-banner": "^0.1.0",
     "react-native-fast-image": "^8.6.1",
+    "react-native-gesture-handler": "^2.8.0",
     "react-native-image-slider-banner": "^1.0.3",
     "react-native-safe-area-context": "^4.4.1",
-    "react-native-screens": "^3.18.2"
+    "react-native-screens": "^3.18.2",
+    "react-navigation": "^4.4.4"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",

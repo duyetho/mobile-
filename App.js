@@ -1,27 +1,13 @@
-import React, { useState } from 'react';
-import { Text, View, TouchableOpacity } from 'react-native';
+import React from "react";
 import { NavigationContainer } from '@react-navigation/native';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import Banner from './components/Banner';
-import TopProducts from './components/TopProducts';
+import Tabs from "./src/components/Navigate";
+import { Text, View} from 'react-native';
+const App = () => (
+  
+  <NavigationContainer>
+    <Tabs/>
+  </NavigationContainer>
 
-// const Tab = createBottomTabNavigator();
+);
 
-// function MyTabs() {
-//   return (
-
-//     <Tab.Navigator>
-//       <Tab.Screen name="banner" component={Banner} />
-//       <Tab.Screen name="topproduct" component={TopProducts} />
-//     </Tab.Navigator>
-//   );
-// }
-
-export default function App() {
-  return (
-    <NavigationContainer>
-        <Banner/>
-        <TopProducts/>
-    </NavigationContainer>
-  );
-}
+export default App;
