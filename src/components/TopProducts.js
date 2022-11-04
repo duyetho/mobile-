@@ -1,74 +1,72 @@
-import {
-    View,
+import { 
     Text,
     StyleSheet,
     Image,
     ScrollView,
-    FlatList,
-    Dimensions,
     TouchableOpacity,
- 
 } from 'react-native';
 import React from 'react';
+import { useNavigation } from '@react-navigation/native';
 
+const DATA = [
+    {
+        id: '1',
+        title: 'Second Item',
+        img: require('../assets/img/image133.png'),
+    },
+    {
+        id: '2',
+        title: 'Third Item',
+        img: require('../assets/img/image134.png'),
+
+    },
+    {
+        id: '3',
+        title: 'First Item',
+        img: require('../assets/img/image135.png'),
+
+    },
+    {
+        id: '4',
+        title: 'Second Item',
+        img: require('../assets/img/image20.png'),
+
+    },
+    {
+        id: '5',
+        title: 'Third Item',
+        img: require('../assets/img/image21.png'),
+
+    }, ,
+    {
+        id: '6',
+        title: 'Third Item',
+        img: require('../assets/img/image22.png'),
+
+    }, ,
+    {
+        id: '7',
+        title: 'Third Item',
+        img: require('../assets/img/image23.png'),
+
+    },
+];
 const TopProducts = () => {
-    const DATA = [
-        {
-            id: '1',
-            title: 'Second Item',
-            img: require('../assets/img/image133.png'),
-        },
-        {
-            id: '2',
-            title: 'Third Item',
-            img: require('../assets/img/image134.png'),
-
-        },
-        {
-            id: '3',
-            title: 'First Item',
-            img: require('../assets/img/image135.png'),
-
-        },
-        {
-            id: '4',
-            title: 'Second Item',
-            img: require('../assets/img/image20.png'),
-
-        },
-        {
-            id: '5',
-            title: 'Third Item',
-            img: require('../assets/img/image21.png'),
-
-        }, ,
-        {
-            id: '6',
-            title: 'Third Item',
-            img: require('../assets/img/image22.png'),
-
-        }, ,
-        {
-            id: '7',
-            title: 'Third Item',
-            img: require('../assets/img/image23.png'),
-
-        },
-    ];
-
-
+    const navigation = useNavigation()
     return (
             <ScrollView style ={styles.container} horizontal showsHorizontalScrollIndicator={false} >
                 {DATA.map((ele,index) => {
                     return (
-                        <View key={index} style={styles.item}>
+                        <TouchableOpacity 
+                        onPress={()=> navigation.navigate('Detail')}
+                        key={index} style={styles.item}>
                             <Image
                                 style={styles.picture}
                                 source={ele.img}
                             />
                              
                             <Text style={styles.title}>{ele.title}</Text>
-                        </View>
+                        </TouchableOpacity>
                     );
                 })}
             </ScrollView>

@@ -1,11 +1,12 @@
-import {View, Text, StyleSheet} from 'react-native';
+import {View, Text, StyleSheet,Button} from 'react-native';
 import React from 'react';
-
 import Products from './Products';
 import Banner from './Banner';
 import TopProducts from './TopProducts';
+import { useNavigation } from '@react-navigation/native';
 
 const Home = () => {
+  const navigation = useNavigation()
   return (
     <View style={styles.container}>
       <View style={styles.banner}>
@@ -23,8 +24,14 @@ const Home = () => {
       </View>
       <View style={styles.all_product}>
         <Products/>
-        </View>
+      </View>
+
+      {/* <Button
+      title="Go to Details"
+      onPress={() => navigation.navigate('Detail')}/> */}
     </View>
+ 
+
   );
 };
 const styles = StyleSheet.create({

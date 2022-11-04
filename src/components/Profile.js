@@ -1,6 +1,5 @@
-import { View, Text, StyleSheet , Image} from 'react-native'
-import React from 'react'
-import Icon from 'react-native-vector-icons/FontAwesome';
+import { View, Text, StyleSheet , Image} from 'react-native';
+import React from 'react';
 
 const Profile = () => {
   return (
@@ -19,77 +18,6 @@ const Profile = () => {
         <Text> <Text>Welcome to Medtech</Text></Text>
       </View>
 
-      <View style={styles.container}>
-        <View style={styles.list}>
-          <Icon name = "sticky-note-o" size={30} color='black'></Icon>
-          <Text> Private Account </Text>
-        </View>
-
-        <View style={styles.icon}>
-          <Icon  name = "right" size={20} color='black'></Icon>
-        </View>
-      </View>
-      <Text style={styles.line}> ────────────────────────────────</Text>
-
-      <View style={styles.container}>
-        <View style={styles.list}>
-          <Icon name = "sticky-note-o" size={30} color='black'></Icon>
-          <Text> My Consults </Text>
-        </View>
-
-        <View>
-        <Icon style={styles.icon} name = "right" size={20} color='black'></Icon>
-        </View>
-      </View>
-      <Text style={styles.line}> ────────────────────────────────</Text>
-
-      <View style={styles.container}>
-        <View style={styles.list}>
-          <Icon name = "sticky-note-o" size={30} color='black'></Icon>
-          <Text> My orders </Text>
-        </View>
-
-        <View>
-        <Icon style={styles.icon} name = "right" size={20} color='black'></Icon>
-        </View>
-      </View>
-      <Text style={styles.line}> ────────────────────────────────</Text>
-
-      <View style={styles.container}>
-        <View style={styles.list}>
-          <Icon name = "sticky-note-o" size={30} color='black'></Icon>
-          <Text> Billing </Text>
-        </View>
-
-        <View>
-        <Icon style={styles.icon} name = "right" size={20} color='black'></Icon>
-        </View>
-      </View>
-      <Text style={styles.line}> ────────────────────────────────</Text>
-
-      <View style={styles.container}>
-        <View style={styles.list}>
-          <Icon name = "sticky-note-o" size={30} color='black'></Icon>
-          <Text> Faq </Text>
-        </View>
-
-        <View>
-        <Icon style={styles.icon} name = "right" size={20} color='black'></Icon>
-        </View>
-      </View>
-      <Text style={styles.line}> ────────────────────────────────</Text>
-
-      <View style={styles.container}>
-        <View style={styles.list}>
-          <Icon name = "sticky-note-o" size={30} color='black'></Icon>
-          <Text> Settings </Text>
-        </View>
-
-        <View>
-        <Icon style={styles.icon} name = "right" size={20} color='black'></Icon>
-        </View>
-      </View>
-      <Text style={styles.line}> ────────────────────────────────</Text>
     </View>
    
   )
